@@ -23,11 +23,23 @@
   margin:0 0 25px !important;
 }
 
+
+/* Workshop title is the primary headline; responsive on phones. */
+.hero .workshop-title{display:block;font-size:clamp(64px,9.8vw,116px)!important;font-weight:900!important;line-height:1.02;letter-spacing:-.065em;color:#fff;margin:24px 0 12px;max-width:1050px}
+.hero .workshop-subtitle{font-size:clamp(15px,2vw,22px);font-weight:750;color:#b5e3e5;margin-bottom:25px}
+.hero .hero-concept{font-size:clamp(24px,3.5vw,41px)!important;line-height:1.15;color:#fff;margin:0 0 22px;letter-spacing:-.035em}
+.hero .hero-concept span{color:#a4dce0}
+.head{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#e7eef2,#d8e4ea);color:#82929f;font-size:12px;font-weight:800;letter-spacing:.09em}
+.head img{width:100%;height:100%;object-fit:cover;object-position:center 28%;display:block}
+.head .fallback{display:none;align-items:center;justify-content:center;position:absolute;inset:0;background:linear-gradient(145deg,#e7eef2,#d8e4ea);color:#82929f}
+.head img.is-missing{display:none}.head img.is-missing+.fallback{display:flex}
+.rsvp{background:#eaf3f5}.rsvp p{max-width:780px;color:#435564}.rsvp .btn{background:#102641;color:white}
+@media(max-width:700px){.hero .workshop-title{font-size:clamp(48px,11vw,76px)!important;overflow-wrap:break-word}.hero .hero-concept{font-size:clamp(23px,6vw,34px)!important}}
 </style></head><body>
-<nav><div class="nav"><b>AI for Pathology</b><div><a href="#about">About</a><a href="#program">Program</a><a href="#speakers">Speakers</a><a href="#venue">Venue</a></div></div></nav>
-<header class="hero"><div><div class="tag">KoSAIM Annual Meeting 2026 · Pathology Imaging Study Group Workshop</div><div class="workshop-title">AI for Pathology</div>
-      <div class="workshop-subtitle">병리영상연구회 Workshop 2026</div>
-      <h1>What to Build.<br><span>How to Build.</span></h1><p class="lead">병리의사가 실제로 필요로 하는 AI는 무엇이며, 우리는 그것을 어떻게 만들어야 할까요? 병리학과 AI 연구의 두 관점을 하나의 워크샵에서 연결합니다.</p><div class="facts"><span>October 23, 2026</span><span>16:10–18:00</span><span>Iris Room</span><span>Grand InterContinental Seoul Parnas</span></div><a class="btn" href="#program">View Program</a><a class="btn alt" href="https://www.kosaim.org/html/?pmode=inputList&amp;smode=view&amp;part=&amp;intAcSeq=109" target="_blank">KoSAIM Annual Meeting</a></div></header>
+<nav><div class="nav"><b>AI for Pathology</b><div><a href="#about">About</a><a href="#program">Program</a><a href="#speakers">Speakers</a><a href="#venue">Venue</a><a href="#rsvp">Registration</a></div></div></nav>
+<header class="hero"><div><div class="tag">KoSAIM Annual Meeting 2026 · Pathology Imaging Study Group Workshop</div><h1 class="workshop-title">AI for Pathology</h1>
+      <div class="workshop-subtitle">대한의료인공지능학회 병리영상연구회 · 2026 Workshop</div>
+      <h2 class="hero-concept">What to Build. <span>How to Build.</span></h2><p class="lead">병리의사가 실제로 필요로 하는 AI는 무엇이며, 우리는 그것을 어떻게 만들어야 할까요? 병리학과 AI 연구의 두 관점을 하나의 워크샵에서 연결합니다.</p><div class="facts"><span>October 23, 2026</span><span>16:10–18:00</span><span>Iris Room</span><span>Grand InterContinental Seoul Parnas</span></div><a class="btn" href="#program">View Program</a><a class="btn alt" href="https://www.kosaim.org/html/?pmode=inputList&amp;smode=view&amp;part=&amp;intAcSeq=109" target="_blank">KoSAIM Annual Meeting</a></div></header>
 <section id="about"><div class="c about"><div><div class="label">About the Workshop</div><h2 class="title">Building AI that pathology actually needs.</h2><p>인공지능 기술은 빠르게 발전하고 있지만, 실제 병리 진료와 연구 현장에서 필요한 문제와 기술 개발 사이에는 여전히 간극이 존재합니다.</p><p>이번 워크샵에서는 병리의사가 경험하는 실제 <b>unmet needs</b>에서 출발하여, 이를 해결하기 위해 어떤 데이터와 AI 기술이 필요한지를 함께 논의합니다.</p><p>병리 전문의와 AI 연구자가 <b>What to Build</b>와 <b>How to Build</b>라는 두 가지 관점에서 디지털 병리와 의료 AI의 다음 방향을 살펴봅니다.</p><p>본 워크샵은 2026년 10월 23–24일 개최되는 <b>대한의료인공지능학회(KoSAIM) 정기학술대회</b> 프로그램의 일부입니다.</p></div><div class="box"><div class="label">Two Questions</div><h3>01. What should we build for pathology?</h3><h3>02. How should we build it?</h3></div></div></section>
 <section class="program" id="program"><div class="c"><div class="label">Program</div><h2 class="title">Workshop Program</h2><p>Six focused talks connecting real-world pathology needs with emerging AI technologies. Each presentation consists of a 15-minute talk followed by 3 minutes of Q&amp;A.</p>
 <div class="item"><div class="time">16:10–16:11</div><div class="talk">Opening</div></div>
@@ -41,13 +53,14 @@
 <div class="item"><div class="time">17:41–17:59</div><div><div class="talk">Toward Virtual Spatial Transcriptomics: Context, Geometry, and Scale</div><div class="sp"><b>곽진태, PhD</b> · 고려대학교 공과대학 전기전자공학부</div><span class="fmt">15 min talk + 3 min Q&amp;A</span></div></div></div>
 <div class="item"><div class="time">17:59–18:00</div><div class="talk">Closing</div></div></div></section>
 <section id="speakers"><div class="c"><div class="label">Speakers</div><h2 class="title">Invited Speakers</h2><div class="grid">
-<article class="card"><div class="head">HEADSHOT<!-- <img src="images/sangjeong-ahn.jpg" alt="안상정"> --></div><div class="cb"><div class="cat">What to Build</div><h3>안상정, MD, PhD</h3><p>고려대학교 의과대학<br>병리학교실</p></div></article>
-<article class="card"><div class="head">HEADSHOT<!-- <img src="images/seungwan-chae.jpg" alt="채승완"> --></div><div class="cb"><div class="cat">What to Build</div><h3>채승완, MD, PhD</h3><p>성균관대학교 의과대학<br>병리학교실</p></div></article>
-<article class="card"><div class="head">HEADSHOT<!-- <img src="images/junghwan-park.jpg" alt="박정환"> --></div><div class="cb"><div class="cat">What to Build</div><h3>박정환, MD, PhD</h3><p>서울대학교 의과대학</p></div></article>
-<article class="card"><div class="head">HEADSHOT<!-- <img src="images/moonyong-lee.jpg" alt="이문용"> --></div><div class="cb"><div class="cat">How to Build</div><h3>이문용, PhD</h3><p>KAIST<br>산업및시스템공학과</p></div></article>
-<article class="card"><div class="head">HEADSHOT<!-- <img src="images/yoonho-choi.jpg" alt="최윤호"> --></div><div class="cb"><div class="cat">How to Build</div><h3>최윤호, PhD</h3><p>한림대학교 춘천성심병원</p></div></article>
-<article class="card"><div class="head">HEADSHOT<!-- <img src="images/jintae-kwak.jpg" alt="곽진태"> --></div><div class="cb"><div class="cat">How to Build</div><h3>곽진태, PhD</h3><p>고려대학교 공과대학<br>전기전자공학부</p></div></article>
+<article class="card"><div class="head"><img src="images/sangjeong-ahn.jpg" alt="안상정 교수 프로필 사진" loading="lazy" onerror="this.classList.add('is-missing')"><span class="fallback">HEADSHOT COMING SOON</span></div><div class="cb"><div class="cat">What to Build</div><h3>안상정, MD, PhD</h3><p>고려대학교 의과대학<br>병리학교실</p></div></article>
+<article class="card"><div class="head"><img src="images/seungwan-chae.jpg" alt="채승완 교수 프로필 사진" loading="lazy" onerror="this.classList.add('is-missing')"><span class="fallback">HEADSHOT COMING SOON</span></div><div class="cb"><div class="cat">What to Build</div><h3>채승완, MD, PhD</h3><p>성균관대학교 의과대학<br>병리학교실</p></div></article>
+<article class="card"><div class="head"><img src="images/junghwan-park.jpg" alt="박정환 교수 프로필 사진" loading="lazy" onerror="this.classList.add('is-missing')"><span class="fallback">HEADSHOT COMING SOON</span></div><div class="cb"><div class="cat">What to Build</div><h3>박정환, MD, PhD</h3><p>서울대학교 의과대학</p></div></article>
+<article class="card"><div class="head"><img src="images/moonyong-lee.jpg" alt="이문용 교수 프로필 사진" loading="lazy" onerror="this.classList.add('is-missing')"><span class="fallback">HEADSHOT COMING SOON</span></div><div class="cb"><div class="cat">How to Build</div><h3>이문용, PhD</h3><p>KAIST<br>산업및시스템공학과</p></div></article>
+<article class="card"><div class="head"><img src="images/yoonho-choi.jpg" alt="최윤호 교수 프로필 사진" loading="lazy" onerror="this.classList.add('is-missing')"><span class="fallback">HEADSHOT COMING SOON</span></div><div class="cb"><div class="cat">How to Build</div><h3>최윤호, PhD</h3><p>한림대학교 춘천성심병원</p></div></article>
+<article class="card"><div class="head"><img src="images/jintae-kwak.jpg" alt="곽진태 교수 프로필 사진" loading="lazy" onerror="this.classList.add('is-missing')"><span class="fallback">HEADSHOT COMING SOON</span></div><div class="cb"><div class="cat">How to Build</div><h3>곽진태, PhD</h3><p>고려대학교 공과대학<br>전기전자공학부</p></div></article>
 </div></div></section>
+<section class="rsvp" id="rsvp"><div class="c"><div class="label">Registration</div><h2 class="title">Join AI for Pathology</h2><p>본 워크샵은 대한의료인공지능학회 2026 정기학술대회의 Satellite Session입니다. 학술대회 참가 등록 안내는 공식 페이지에서 확인해 주세요. 워크샵 전용 RSVP 신청 링크는 개설 후 이곳에 추가될 예정입니다.</p><a class="btn" href="https://www.kosaim.org/html/?pmode=inputList&amp;smode=view&amp;part=&amp;intAcSeq=109" target="_blank" rel="noopener noreferrer">KoSAIM 정기학술대회 안내</a><p style="margin-top:18px;font-size:13px">문의: <a href="mailto:office@kosaim.org">office@kosaim.org</a></p></div></section>
 <section class="venue" id="venue"><div class="c vg"><div><div class="label">Venue</div><h2 class="title">Iris Room</h2><p><b>Grand InterContinental Seoul Parnas</b><br>October 23, 2026 · 16:10–18:00</p></div><div class="vbox"><b>KoSAIM Annual Meeting 2026</b><br>October 23–24, 2026<br><br><b>Workshop venue</b><br>Iris Room<br>Grand InterContinental Seoul Parnas<br>521 Teheran-ro, Gangnam-gu, Seoul</div></div></section>
 <section class="org"><p>Organized by</p><h3>대한의료인공지능학회 병리영상연구회</h3><p>Pathology Imaging Study Group · Korean Society of Artificial Intelligence in Medicine (KoSAIM)</p></section>
 <footer>AI for Pathology · Pathology Imaging Study Group Workshop · KoSAIM Annual Meeting 2026</footer>
